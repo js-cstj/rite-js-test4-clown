@@ -1,0 +1,95 @@
+/*************************************************************
+test.scss
+**************************************************************/
+div.feu {
+    margin: 1em 0;
+    padding: .5em;
+    border-radius: .25em;
+    font-size: 32px;
+    background-color: yellow;
+    box-sizing: border-box;
+    &.vertical {
+        width: 2.5em;
+    }
+    &.horizontal {
+        width: 5em;
+    }
+    table {
+        background-color: black;
+        border-spacing: .25em;
+        tr {
+            td {
+                padding: 0;
+                border-radius: 100%;
+                width: 1em;
+                height: 1em;
+            }
+        }
+    }
+}
+fieldset.champ.disponibilites {
+    border:1px solid black;
+    margin: 1em 0;
+    &:disabled {
+        background-color: #eee;
+        color: #999;
+    }
+    label {
+        display: block;
+        input[name="disponibilites"][id="disponibilites_matin"][value="matin"],
+        input[name="disponibilites"][id="disponibilites_midi"][value="midi"],
+        input[name="disponibilites"][id="disponibilites_soir"][value="soir"] {
+            // outline: 3px dotted red;
+            box-shadow: .1em .1em .2em black;
+            margin-left: 1em;
+        }
+    }
+
+}
+
+div.divertissement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+    img {
+        display: block;
+    }
+    figure {
+        margin: 0;
+        padding: 0;
+        border: 1px solid black;
+        padding: 1em;
+        transform: rotate(10deg);
+        background-color: whitesmoke;
+        box-shadow: .2em .2em .4em #0008;
+    }
+    figcaption {
+        background-color: rgb(149, 2, 185);
+        color:white;
+        text-align: center;
+        font-weight: bold;
+        padding: 1em;
+    }
+}
+section.recette {
+    padding: 0em 2em;
+    border: .2em solid black;
+    border-style: solid none;
+    width: 18em;
+    h2 {
+        font-style: italic;
+    }
+    li {
+        margin: .5em 0;
+    }
+}
+
+#search {
+    border: 1px dashed red;
+    padding: 1em;
+    margin: 1em 0;
+    h2 {
+        margin: 0;
+    }
+}
